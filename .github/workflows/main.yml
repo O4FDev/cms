@@ -35,6 +35,8 @@ jobs:
           base: ci
           branch: main
           token: ${{ secrets.TOKEN }}
+          reviewers: O4FDev
+          assignees: O4FDev
           commit-message: Now that the tests have passed, we'll create a pull request!
           title: '[Example] Test the application'
           body: >
