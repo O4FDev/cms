@@ -1,11 +1,19 @@
 name: Node.js CI
 
-on: push
+on:
+  push:
+    branches:
+      - !master
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
+
+    # only where the branch is not master
+    # and the branch is not develop
+
+    bra
 
     steps:
       - uses: actions/checkout@v3
