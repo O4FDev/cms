@@ -28,15 +28,18 @@ jobs:
 
     needs: [build]
 
+    id: cpr
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: peter-evans/create-pull-request@v3
+      - uses: actions/checkout@v3
+      - uses: peter-evans/create-pull-request@v4
         with:
           base: ci
-          branch: main
+          branch: example-branch
           token: ${{ secrets.TOKEN }}
           reviewers: O4FDev
           assignees: O4FDev
+          signoff: false
           commit-message: Now that the tests have passed, we'll create a pull request!
           title: '[Example] Test the application'
           body: >
