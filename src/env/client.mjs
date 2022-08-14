@@ -23,15 +23,15 @@ export const formatErrors = (
 //   throw new Error("Invalid environment variables");
 // }
 
-/**
- * Validate that client-side environment variables are exposed to the client.
- */
-for (let key of Object.keys(_clientEnv.data)) {
-  if (!key.startsWith("NEXT_PUBLIC_")) {
-    console.warn("❌ Invalid public environment variable name:", key);
+// /**
+//  * Validate that client-side environment variables are exposed to the client.
+//  */
+// for (let key of Object.keys(_clientEnv.data)) {
+//   if (!key.startsWith("NEXT_PUBLIC_")) {
+//     console.warn("❌ Invalid public environment variable name:", key);
 
-    throw new Error("Invalid public environment variable name");
-  }
-}
+//     throw new Error("Invalid public environment variable name");
+//   }
+// }
 
-export const env = _clientEnv.data;
+// export const env = _clientEnv.data;
