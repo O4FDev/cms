@@ -33,7 +33,7 @@ jobs:
       - uses: peter-evans/create-pull-request@v3
         with:
           base: master
-          head: ci
+          branch: ci
           token: ${{ secrets.TOKEN }}
           commit-message: Now that the tests have passed, we'll create a pull request!
           title: '[Example] Test the application'
