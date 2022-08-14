@@ -14,9 +14,3 @@ jobs:
         with:
           node-version: 15.x
       - run: npm run test
-      - if:
-          - result != 0
-          - name: Fail the workflow
-            uses: actions/fail@v1
-            with:
-              message: "npm run test failed"
