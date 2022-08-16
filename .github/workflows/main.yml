@@ -1,9 +1,9 @@
 name: Node.js CI
 
 on:
-  push:
-    branches:
-      - ci
+    push:
+        branches:
+            - ci
 
 jobs:
   build:
