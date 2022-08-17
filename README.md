@@ -25,6 +25,7 @@ You can find more information about setting up a GitHub app [here at the NextAut
 | ---- | ----- |
 | Fix GitHub actions testing | GitHub actions tests are broken because it cannot load enviornment variables, it would be super helpful if anyone had suggestions or could pr a fix. |
 | Add more features | ...go free till your heart's content |
+| Check the database schema | [See here for inspiration but all PRs as always appreciated, especially if they bring us a bit closer to having the HTML CSS JS specs for rendering.]("https://www.figma.com/file/MiJuTQhBuN2PzXhfdOjVIg/Image-Collection-%F0%9F%93%B8?node-id=1%3A2") |
 
 ## The vision 
 
